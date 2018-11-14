@@ -7,6 +7,10 @@ body {
     font-family: Gilroy;
     src: url(Font/Gilroy-ExtraBold.otf);
 }
+@font-face {
+    font-family: GilroyLight;
+    src: url(Font/Gilroy-Light.otf);
+}
 #home {
   background-color: #e7123a;
   height: 100vh;
@@ -18,9 +22,9 @@ body {
 .coming_soon {
   color: #fff;
   font-size: 40px;
-  font-family: Gilroy;
+  font-family: GilroyLight;
   z-index: 1;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
 }
 .logo {
   width: 20%;
@@ -48,15 +52,23 @@ body {
   position: fixed;
   width: 300px;
 }
+.text {
+  color: #fff;
+  font-family: GilroyLight;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -20px;
+
+}
 @media only screen and (max-width: 1000px) {
     .logo {
-        width: 80%;
+        width: 60%;
     }
-    .coming_soon {
-      font-size: 64px;
-    }
+   
     .back {
-      width: 200%;
+      transform: scale(1.7);
+      bottom: 140px;
     }
     .top {
       width: 500px;
