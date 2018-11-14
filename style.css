@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(Font/Gilroy-ExtraBold.otf);
+}
+#home {
+  background-color: #e7123a;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.coming_soon {
+  color: #fff;
+  font-size: 40px;
+  font-family: Gilroy;
+  z-index: 1;
+  letter-spacing: 10px;
+}
+.logo {
+  width: 20%;
+  z-index: 1;
+}
+.back {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+.left {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 100px;
+}
+.right {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 100px;
+}
+.top {
+  top: 10px;
+  position: fixed;
+  width: 300px;
+}
+@media only screen and (max-width: 1000px) {
+    .logo {
+        width: 80%;
+    }
+    .coming_soon {
+      font-size: 64px;
+    }
+    .back {
+      width: 200%;
+    }
+    .top {
+      width: 500px;
+    }
+    .left {
+      width: 200px;
+    }
+    .right {
+      width: 200px;
+    }
+}
